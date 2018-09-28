@@ -10,4 +10,10 @@ public class PrimeFactorsTest {
         assertThat(PrimeFactors.primeFactors(2)).isEqualTo(expected);
     }
 
+    @Test
+    public void primeFactors_should_return_list_with_3_for_3() {
+        int[] expected = {3};
+        assertThat(PrimeFactors.primeFactors(3)).isEqualTo(expected);
+    }
+
 }
