@@ -16,4 +16,11 @@ public class PrimeFactorsTest {
         assertThat(PrimeFactors.primeFactors(3)).isEqualTo(expected);
     }
 
+    @Test
+    public void primeFactors_should_return_list_of_2_and_2_for_3() {
+        int[] expected = {2, 2};
+        assertThat(PrimeFactors.primeFactors(4)).isEqualTo(expected);
+    }
+
+
 }
