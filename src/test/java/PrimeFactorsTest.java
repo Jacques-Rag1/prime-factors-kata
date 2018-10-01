@@ -39,12 +39,12 @@ public class PrimeFactorsTest {
     }
 
     @Test
-    public void primeFactors_for_1() {
+    public void primeFactors_for_1_should_return_an_empty_list() {
         int[] expected = {};
         assertThat(PrimeFactors.primeFactors(1)).isEqualTo(expected);
     }
     @Test
-    public void primeFactors_for_negative() {
+    public void primeFactors_for_negative_should_return_an_empty_list() {
         int[] expected = {};
         assertThat(PrimeFactors.primeFactors(-20)).isEqualTo(expected);
     }
