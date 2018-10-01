@@ -32,6 +32,22 @@ public class PrimeFactorsTest {
         int[] expected = {2, 5};
         assertThat(PrimeFactors.primeFactors(10)).isEqualTo(expected);
     }
+    @Test
+    public void primeFactors_for_60(){
+        int[] expected = {2,2,3,5};
+        assertThat(PrimeFactors.primeFactors(60)).isEqualTo(expected);
+    }
+
+    @Test
+    public void primeFactors_for_1() {
+        int[] expected = {};
+        assertThat(PrimeFactors.primeFactors(1)).isEqualTo(expected);
+    }
+    @Test
+    public void primeFactors_for_negative() {
+        int[] expected = {};
+        assertThat(PrimeFactors.primeFactors(-20)).isEqualTo(expected);
+    }
 
 
 }
